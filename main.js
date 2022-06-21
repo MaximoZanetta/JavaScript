@@ -4,8 +4,9 @@
 
 //mazo
 const mazo = []
-const mazoMezclado =[]
+let mazoMezclado =[]
 const tipos = ["basto", "espada", "oro" ,"copa"]
+let cartasRepartidas = []
 
 //creacion de usuario
 class Jugador {
@@ -53,13 +54,18 @@ for(let i = 10; i <= 12;i++){
 
 //Aca voy a hacer una funcion que me permita mezclar el mazo
 const mezclarMazo = ()=>{
-    mazoMezclado = mazo
+  mazoMezclado = mazo.map(carta => ({carta, sort: Math.random()}))
+   .sort((a, b) => a.sort - b.sort)
+   .map(({carta}) => carta)
 }
 
 
 //Luego de eso, una funcion que reparta 3 cartas
 const repartir = ()=>{
-    mazoMezclado
+    const primeraCarta = mazoMezclado[0];
+    const segundaCarta = mazoMezclado[1];
+    const terceraCarta = mazoMezclado[2];
+    cartasRepartidas.push(primeraCarta, segundaCarta, terceraCarta)
 }
 
 
@@ -72,4 +78,21 @@ const repartir = ()=>{
 
 
 console.log(mazo);
+mezclarMazo()
+console.log(mazoMezclado);
+repartir()
+console.log(cartasRepartidas)
 
+
+//asi va a inicializarse 
+
+// function inicio(){
+
+    // const btnIniciar = document.getElementById('start');
+    
+    // btnIniciar.addEventListener('click', ()=>{
+        //     mezclarMazo()
+        //     repartir()
+        // })
+        
+// }
