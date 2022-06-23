@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(../img/posiblebg.jpg);
+    background-image: url(../img/bangsal-nam-9HMGyZJfrk8-unsplash.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,13 +16,13 @@ body {
 header {
     height: 75px;
     width: 100%;
-    background-color: #A22522;
+    background-color: black;
     margin-bottom: 50px;
 }
 
 header a {
     text-decoration: none;
-    color: black;
+    color: white;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@ header a {
 }
 
 header a:hover {
-    color: black;
+    color: white;
     opacity: .8;
 }
 

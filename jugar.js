@@ -19,20 +19,20 @@
 
         
 
-const abrir = document.querySelector(".modal-btn");
-const modal = document.querySelector(".modal");
-const cerrar = document.querySelector(".modal-cerrar");
+// const abrir = document.querySelector(".modal-btn");
+// const modal = document.querySelector(".modal");
+// const cerrar = document.querySelector(".modal-cerrar");
 
-abrir.addEventListener("click", (e)=>{
-    e.preventDefault();
-    modal.classList.add("modal-show");
-    sinRegistration();
-})
+// abrir.addEventListener("click", (e)=>{
+//     e.preventDefault();
+//     modal.classList.add("modal-show");
+//     sinRegistration();
+// })
 
-cerrar.addEventListener("click", (e)=>{
-    e.preventDefault();
-    modal.classList.remove("modal-show");
-})
+// cerrar.addEventListener("click", (e)=>{
+//     e.preventDefault();
+//     modal.classList.remove("modal-show");
+// })
 
 
 // const usuario = document.getElementsByClassName("input-name").value;
